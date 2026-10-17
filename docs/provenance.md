@@ -54,7 +54,7 @@ New or substantially rewritten content includes:
 
 ## 许可证说明 / License notes
 
-本项目的原创改写文件采用 MIT License，版权归属 Qin-jiahao。上游 Anti-Defensive Writing 项目的 MIT 版权和许可文本见根目录 `THIRD-PARTY-NOTICES.md`。对于许可证状态未核验的 Oral Paper Skill，本项目不把其文本作为可复制素材；如果未来需要复制代码、示例或原文，应先取得授权或确认许可证。
+本项目的原创改写文件采用 MIT License，版权归属 Qin-jiahao。上游 Anti-Defensive Writing 项目的 MIT 版权和许可文本见根目录 `THIRD-PARTY-NOTICES.md`。对于许可证尚未核验的 Oral Paper Skill，本项目不把其文本作为可复制素材；如果未来需要复制代码、示例或原文，应先取得授权或确认许可证。
 
 Original rewritten files in this project are released under the MIT License with copyright attributed to Qin-jiahao. The upstream Anti-Defensive Writing MIT copyright and license text is retained in `THIRD-PARTY-NOTICES.md`. Because the Oral Paper Skill did not expose a clear license in the inspected file list, this project does not treat its text without a verified license as reusable material. Any future copying of code, examples, or source text requires permission or a verified license.
 

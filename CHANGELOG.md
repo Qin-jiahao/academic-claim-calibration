@@ -8,7 +8,7 @@
 - 合并两类公开思路：减少空洞自我削弱，以及用来源可追溯的 Oral 论文案例做对照学习。
 - 增加 KEEP、REPHRASE、MOVE、NEEDS_EVIDENCE 和 DO_NOT_REMOVE 审查标签。
 - 增加双语输入输出契约、作者决策点、来源轨迹和静态验证。
-- 标明 Oral Paper Skill 的许可证状态待核验，未复制其许可证状态未核验的原文。
+- 标明 Oral Paper Skill 的许可证尚未核验，未复制其原文。
 
 ### English
 
