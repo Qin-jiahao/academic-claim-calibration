@@ -35,13 +35,13 @@ Here, “defensive writing” means unnecessary apologies, unnecessary pre-empti
 
 1. **校准改写 / Calibrate.** 审查已有段落，删除空洞防御性修辞，校准主张范围，并保留必要披露。
 2. **对照改进 / Compare.** 使用用户提供且可核验的参考论文或系统能够核验的来源，最多提出三处与当前稿件直接相关的改进。每条建议都要区分来源观察、适用解释、对当前稿件的具体动作和限制。
-3. **学习复盘 / Reflect.** 解释一项可迁移的写作或证据组织做法，再给作者一个围绕自己材料的练习。不要把优秀论文的做法变成固定模板。
+3. **学习复盘 / Reflect.** 解释一项可迁移的写作或证据组织做法，再给作者一个围绕自己材料的练习。不要把被选为 Oral 的论文做法变成固定模板。
 
 Select one primary mode instead of running every mode:
 
 1. **Calibrate.** Audit an existing paragraph, remove empty defensive rhetoric, calibrate claim scope, and retain necessary disclosures.
 2. **Compare.** Use reference papers supplied by the user, or sources the system can verify, to propose at most three changes directly relevant to the draft. Separate the source observation, applicability, concrete action, and limitation.
-3. **Reflect.** Explain one transferable writing or evidence-organization practice and give the author a focused exercise. Do not turn exemplary papers into a fixed template.
+3. **Reflect.** Explain one transferable writing or evidence-organization practice and give the author a focused exercise. Do not turn practices from papers selected for Oral presentation into a fixed template.
 
 ## Source-derived narrative practices / 来源启发的叙事做法
 
@@ -111,6 +111,7 @@ When authors anticipate AI-assisted review, improve traceability and claim–evi
 - 章节位置和写作任务；
 - 研究设计、研究对象、分析集和比较对象；
 - 每个核心主张对应的表格、图、统计摘要或可靠引用；
+- 对每个定量主张给出结局定义、指标类型、效应量口径和不确定性；缺失时标记为 `NEEDS_EVIDENCE / 待补充`；
 - 预先规定的结局、主要限制、阴性结果和必须披露事项；
 - 目标期刊或报告指南要求；
 - 语言、目标读者和编辑强度（最小句法修改或允许结构重组）。
@@ -122,6 +123,7 @@ Ask for:
 - The section and the requested writing task;
 - The study design, population, analysis set, and comparator;
 - A table, figure, statistical summary, or reliable citation for each substantive claim;
+- For each quantitative claim, the outcome definition, metric type, effect-measure convention, and uncertainty; mark missing items as `NEEDS_EVIDENCE / 待补充`;
 - Prespecified outcomes, material limitations, null findings, and required disclosures;
 - Target-journal or reporting-guideline requirements;
 - Language, target audience, and desired editing intensity (minimal syntax edits or structural revision).

@@ -18,14 +18,14 @@ This project is an independent bilingual synthesis of two public projects: [Adki
 - 把每个关键主张和研究设计、比较对象、结果或可靠引用对应起来。
 - 保留会改变读者判断的阴性结果、冲突证据、主要限制、适用范围和伦理与安全信息。
 - 让中文和英文的证据强度保持一致。
-- 用一到三项来源可核验的做法帮助作者对照优秀论文，但不把 Oral 身份当作评分或录用保证。
+- 用一到三项来源可核验的做法帮助作者对照被选为 Oral 的论文案例，但不把 Oral 身份当作评分或录用保证。
 - 限制 AI 的反复套话：必要限定只出现一次，默认最多给出三项实质改进，研究主线由作者确认。
 
 - Remove apology-like openings, repeated caveats, and self-undermining language that adds no information.
 - Link each substantive claim to the study design, comparator, result, or reliable citation that supports it.
 - Keep null findings, conflicting evidence, material limitations, scope conditions, and ethics or safety information that affect interpretation.
 - Keep the evidential strength aligned across Chinese and English versions.
-- Use one to three source-traceable practices for comparison with exemplary papers, without treating Oral status as a score or acceptance guarantee.
+- Use one to three source-traceable practices to compare with papers selected for Oral presentation, without treating Oral status as a score or acceptance guarantee.
 - Limit repetitive caveating in AI-assisted revisions: keep each necessary qualifier once, give at most three substantive improvements by default, and leave the research emphasis to the author.
 
 ### 明确边界 / Non-goals and guardrails
@@ -38,9 +38,9 @@ This project does not provide a selective-reporting strategy. It must not hide, 
 
 ### 作为 Skill 使用 / Use as a Skill
 
-把 [skills/academic-claim-calibration/SKILL.md](skills/academic-claim-calibration/SKILL.md) 复制到你使用的 Agent 工具的 skills 目录。提交原文时，同时提供研究设计、比较对象、主要结果、重要限制和目标期刊要求。没有这些信息时，Skill 应该暂停实质改写，并列出“待补充 / AUTHOR_INPUT_NEEDED”。
+把 [skills/academic-claim-calibration/SKILL.md](skills/academic-claim-calibration/SKILL.md) 复制到你使用的 Agent 工具的 skills 目录。提交原文时，同时提供研究设计、比较对象、主要结果、重要限制和目标期刊要求。没有这些信息时，Skill 应该暂停实质改写，并列出“NEEDS_EVIDENCE / 待补充”项目。
 
-Copy [skills/academic-claim-calibration/SKILL.md](skills/academic-claim-calibration/SKILL.md) into the skills directory used by your Agent tool. Supply the study design, comparator, key findings, material limitations, and journal requirements together with the draft. When these inputs are missing, the Skill should pause substantive rewriting and list “待补充 / AUTHOR_INPUT_NEEDED” items.
+Copy [skills/academic-claim-calibration/SKILL.md](skills/academic-claim-calibration/SKILL.md) into the skills directory used by your Agent tool. Supply the study design, comparator, key findings, material limitations, and journal requirements together with the draft. When these inputs are missing, the Skill should pause substantive rewriting and list “NEEDS_EVIDENCE / 待补充” items.
 
 ### 安装说明 / Installation
 
@@ -77,16 +77,18 @@ At minimum, provide:
 1. 需要修改的原文和章节位置；
 2. 研究设计、研究对象或分析集；
 3. 关键主张对应的表格、图、统计摘要或可靠引用；
-4. 预先规定的结局、阴性结果和必须披露的限制；
-5. 目标读者、语言和期望编辑强度；
-6. 对照模式下的参考论文、定位信息和阅读层级。
+4. 对每个定量主张提供结局定义、指标类型、效应量口径和不确定性；
+5. 预先规定的结局、阴性结果和必须披露的限制；
+6. 目标读者、语言和期望编辑强度；
+7. 对照模式下的参考论文、定位信息和阅读层级。
 
 1. The draft text and section location;
 2. The study design, population, or analysis set;
 3. The table, figure, statistical summary, or reliable citation supporting each key claim;
-4. Prespecified outcomes, null findings, and limitations that must be disclosed;
-5. The target audience, language, and desired editing intensity;
-6. For compare mode, the reference papers, locators, and reading levels.
+4. For each quantitative claim, the outcome definition, metric type, effect-measure convention, and uncertainty;
+5. Prespecified outcomes, null findings, and limitations that must be disclosed;
+6. The target audience, language, and desired editing intensity;
+7. For compare mode, the reference papers, locators, and reading levels.
 
 ## 输出内容 / Expected output
 

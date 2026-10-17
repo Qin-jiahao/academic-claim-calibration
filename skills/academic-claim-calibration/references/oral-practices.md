@@ -2,9 +2,9 @@
 
 ## 目的 / Purpose
 
-本文件把上游 `Adkid-Zephyr/oral-paper-skill` 公开文档中描述的七项编辑做法，重新整理成适合本项目的审查问题。它们用于帮助作者比较、改进和复盘，不用于预测录用，也不构成所有优秀论文的共同规律。
+本文件把上游 `Adkid-Zephyr/oral-paper-skill` 公开文档中描述的七项编辑做法，重新整理成适合本项目的审查问题。它们用于帮助作者比较、改进和复盘，不用于预测录用，也不把被选为 Oral 的论文视为具有普遍代表性。
 
-This document reframes the seven editorial practices described in the public documentation of the upstream `Adkid-Zephyr/oral-paper-skill` as review questions for this project. They support comparison, revision, and reflection. They do not predict acceptance or define universal properties of exemplary papers.
+This document reframes the seven editorial practices described in the public documentation of the upstream `Adkid-Zephyr/oral-paper-skill` as review questions for this project. They support comparison, revision, and reflection. They do not predict acceptance or establish universal properties of papers selected for Oral presentation.
 
 上游项目报告在六个会议周期的官方名单中处理了 884 个条目，其中 883 个被视为合格摘要，并说明其工作主要是摘要级的 AI 辅助提取、交叉综合和部分原文核查。这里的数字和范围是上游项目的自述，不是本项目重新完成的研究，也不是效果评估。
 

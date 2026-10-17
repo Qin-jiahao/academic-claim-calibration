@@ -14,9 +14,10 @@ Use this prompt for abstracts, introductions, results, discussions, conclusions,
 2. 原文和章节位置；
 3. 研究设计、研究对象、分析集和比较对象；
 4. 关键主张对应的表格、图、统计摘要或可靠引用；
-5. 预先规定的结局、阴性结果、冲突证据和必须披露的限制；
-6. 目标期刊、报告指南、语言和读者；
-7. 对照改进模式下的参考论文链接、定位信息和实际阅读层级。
+5. 对每个定量主张提供结局定义、指标类型、效应量口径和不确定性；缺失时标记为“NEEDS_EVIDENCE / 待补充”；
+6. 预先规定的结局、阴性结果、冲突证据和必须披露的限制；
+7. 目标期刊、报告指南、语言和读者；
+8. 对照改进模式下的参考论文链接、定位信息和实际阅读层级。
 
 Provide:
 
@@ -24,9 +25,10 @@ Provide:
 2. The draft and section location;
 3. Study design, population, analysis set, and comparator;
 4. A table, figure, statistical summary, or reliable citation for each key claim;
-5. Prespecified outcomes, null findings, conflicting evidence, and required limitations;
-6. Target journal, reporting guideline, language, and audience;
-7. For compare mode, reference-paper links, locators, and the actual reading level.
+5. For each quantitative claim, provide the outcome definition, metric type, effect-measure convention, and uncertainty; mark missing items as `NEEDS_EVIDENCE / 待补充`;
+6. Prespecified outcomes, null findings, conflicting evidence, and required limitations;
+7. Target journal, reporting guideline, language, and audience;
+8. For compare mode, reference-paper links, locators, and the actual reading level.
 
 缺少比较对象、结局定义、研究设计或证据位置时，模型必须暂停实质改写，列出待补充项。用户没有提供的数字、文献、统计量、机制或运行结果不得补写。
 
@@ -131,9 +133,9 @@ Supplied information: single-center retrospective cohort; Table 2 provides the e
 
 **输出 / Output**
 
-审查：第一句的相关性和单中心限制必须保留（KEEP / DO_NOT_REMOVE）；“我们仍认为有前景”没有提供额外证据，可删除或改为待核验（REPHRASE / NEEDS_EVIDENCE）。
+审查：“与较少的再入院相关”标记为 KEEP / 必须保留；“样本来自一家医院”标记为 DO_NOT_REMOVE / 禁止删除；“我们仍认为有前景”标记为 NEEDS_EVIDENCE / 待补充，因为输入没有提供支持该评价的证据。
 
-Audit: Keep the association and the single-center limitation (KEEP / DO_NOT_REMOVE). “We nevertheless believe the method is promising” adds no supplied evidence and should be removed or marked for verification (REPHRASE / NEEDS_EVIDENCE).
+Audit: Label “associated with fewer readmissions” KEEP; label the single-center limitation DO_NOT_REMOVE; label “the method is promising” NEEDS_EVIDENCE because no evidence supporting that evaluation was supplied.
 
 中文修改稿 / Chinese revision: 在本单中心回顾性队列中，该方法与较少的再入院相关。该设计不能建立因果关系，研究也尚未完成外部验证。实际估计值和不确定性应从表 2 填入。
 
