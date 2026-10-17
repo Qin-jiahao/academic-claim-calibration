@@ -89,6 +89,13 @@ def check_links() -> None:
                 fail(f"{path}: broken local link {target}")
 
 
+def check_markdown_fences() -> None:
+    for path in ROOT.rglob("*.md"):
+        text = read(path)
+        if text.count("```") % 2:
+            fail(f"{path}: unbalanced fenced code block")
+
+
 def check_required_files() -> None:
     for relative in (
         "README.md",
@@ -100,6 +107,8 @@ def check_required_files() -> None:
         "docs/oral-practices.md",
         "skills/academic-claim-calibration/references/oral-practices.md",
         "scripts/validate_project.py",
+        "scripts/validate_frontmatter.rb",
+        ".github/workflows/validate.yml",
     ):
         if not (ROOT / relative).exists():
             fail(f"missing required file: {relative}")
@@ -109,6 +118,7 @@ check_required_files()
 check_skill()
 check_prompt()
 check_links()
+check_markdown_fences()
 
 if ERRORS:
     print("\n".join(ERRORS))

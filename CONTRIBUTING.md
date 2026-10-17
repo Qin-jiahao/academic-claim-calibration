@@ -2,7 +2,7 @@
 
 ## 贡献范围 / Scope
 
-欢迎提交能够提高证据可追溯性、双语一致性、作者控制和来源清晰度的修改。这个项目收录的是可复用的 Skill、Prompt 和审查规则，不收录未经授权的截图、私人信息、整段网络复制内容或虚构的研究结果。
+欢迎提交能够提高证据可追溯性、双语一致性、作者控制和来源清晰度的修改。这个项目收录的是可复用的 Skill、Prompt 和审查规则，不收录未经授权的截图、私人信息、未经授权的整段网络复制内容或虚构的研究结果。
 
 Contributions that improve evidence traceability, bilingual consistency, author control, and provenance clarity are welcome. This project accepts reusable Skills, prompts, and review rules. Do not submit unauthorized screenshots, private information, unauthorized copied web passages, or fabricated research results.
 
@@ -13,14 +13,14 @@ Contributions that improve evidence traceability, bilingual consistency, author 
 3. 保持中文和英文语义、证据强度和限制披露一致。
 4. 不改变用户提供的数字、单位、样本量、统计量、引用或运行结果。
 5. 检查没有选择性删除阴性结果、失败实验、关键限制或报告要求。
-6. 运行 `python3 scripts/validate_project.py` 和 `git diff --check`。
+6. 运行 `python3 scripts/validate_project.py`、`ruby scripts/validate_frontmatter.rb` 和 `git diff --check`。
 
 1. State the concrete research-writing problem the change addresses.
 2. Provide provenance for new or rewritten material; when provenance is unknown, say “collected from public online material and independently organized” or “license unverified.”
 3. Keep Chinese and English aligned in meaning, evidential strength, and disclosures.
 4. Do not change supplied numbers, units, sample sizes, statistics, citations, or execution results.
 5. Check that null findings, failed experiments, material limitations, and required reporting items were not selectively removed.
-6. Run `python3 scripts/validate_project.py` and `git diff --check`.
+6. Run `python3 scripts/validate_project.py`, `ruby scripts/validate_frontmatter.rb`, and `git diff --check`.
 
 ## 内容规则 / Content rules
 
@@ -49,3 +49,9 @@ Please include:
 - 已完成检查 / Checks completed;
 - 待核验内容 / Items still unverified;
 - 是否包含真实论文案例；如果包含，请去除私人信息并确认作者有权公开 / Whether real manuscript examples are included; remove private information and confirm publication permission.
+
+## 自动检查 / Automated checks
+
+提交到 `main` 的 Push 和 Pull Request 会运行 [`.github/workflows/validate.yml`](.github/workflows/validate.yml)。本地提交前应运行贡献规则中列出的两个脚本和 `git diff --check`。
+
+Pushes and pull requests targeting `main` run [`.github/workflows/validate.yml`](.github/workflows/validate.yml). Before submitting locally, run the two scripts listed above and `git diff --check`.

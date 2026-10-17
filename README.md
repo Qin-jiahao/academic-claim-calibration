@@ -1,20 +1,22 @@
 # Academic Claim Calibration / 学术主张校准
 
+[![Validate project](https://github.com/Qin-jiahao/academic-claim-calibration/actions/workflows/validate.yml/badge.svg)](https://github.com/Qin-jiahao/academic-claim-calibration/actions/workflows/validate.yml)
+
 一个面向科研写作的双语 Skill 和 Prompt。它帮助研究者识别没有信息增量的自我削弱、重复免责声明和无证据的预先辩解，再把表述调整到证据能够支持的范围内。
 
-A bilingual Skill and prompt for research writing. It identifies empty self-undermining, redundant disclaimers, and unsupported pre-emptive defenses, then calibrates the wording to the supplied evidence.
+A bilingual Skill and prompt for research writing. It identifies unhelpful self-undermining, redundant disclaimers, and unsupported pre-emptive defenses, then calibrates the wording to the supplied evidence.
 
 ## 项目定位 / Project scope
 
 本项目把两个公开项目的可用思路重新整合：[Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b) 提供直接、聚焦贡献的表达视角；[Adkid-Zephyr/oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill/tree/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308) 提供来源可追溯的论文对照和复盘思路。本项目把两者改写成“证据边界内的学术主张校准”，补充透明报告、不利结果保留和作者决策规则。项目没有复制截图或上游文件的长段落。
 
-This project is an independent bilingual synthesis of two public projects: [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b) contributes a direct, contribution-focused writing perspective, while [Adkid-Zephyr/oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill/tree/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308) contributes source-linked comparison and reflection. This project reframes both as evidence-bounded academic claim calibration and adds transparent-reporting, adverse-finding, and author-decision safeguards. It does not reproduce the screenshot or copy long passages from upstream files.
+This project is an independent bilingual synthesis of two public projects: [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b) contributes a direct, contribution-focused writing perspective, while [Adkid-Zephyr/oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill/tree/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308) contributes source-linked comparison and reflection. This project reframes both as evidence-bounded academic claim calibration and adds safeguards for transparent reporting, retention of adverse findings, and author control. It does not reproduce the screenshot or copy long passages from upstream files.
 
 ### 这个项目解决什么问题 / What it addresses
 
 - 删除道歉式开场、重复的“可能存在局限”以及没有新信息的自我否定。
 - 把每个关键主张和研究设计、比较对象、结果或可靠引用对应起来。
-- 保留会改变读者判断的阴性结果、冲突证据、主要限制、适用范围和伦理安全信息。
+- 保留会改变读者判断的阴性结果、冲突证据、主要限制、适用范围和伦理与安全信息。
 - 让中文和英文的证据强度保持一致。
 - 用一到三项来源可核验的做法帮助作者对照优秀论文，但不把 Oral 身份当作评分或录用保证。
 - 限制 AI 的反复套话：必要限定只出现一次，默认最多给出三项实质改进，研究主线由作者确认。
@@ -24,13 +26,13 @@ This project is an independent bilingual synthesis of two public projects: [Adki
 - Keep null findings, conflicting evidence, material limitations, scope conditions, and ethics or safety information that affect interpretation.
 - Keep the evidential strength aligned across Chinese and English versions.
 - Use one to three source-traceable practices for comparison with exemplary papers, without treating Oral status as a score or acceptance guarantee.
-- Limit repetitive AI caveats: keep each necessary qualifier once, give at most three substantive improvements by default, and leave the research emphasis to the author.
+- Limit repetitive caveating in AI-assisted revisions: keep each necessary qualifier once, give at most three substantive improvements by default, and leave the research emphasis to the author.
 
 ### 明确边界 / Non-goals and guardrails
 
 本项目不提供选择性报告策略。它不能指导用户隐藏、删除、改名或弱化预先规定的主要结局、阴性结果、失败实验、异常值处理、排除决定、关键比较、利益冲突、伦理风险或报告规范要求。它也不能把相关性改写成因果关系，把探索性分析写成确认性结论，或通过更换评价指标来规避不利证据。
 
-This project does not provide a selective-reporting strategy. It must not hide, delete, relabel, or weaken prespecified primary outcomes, null findings, failed experiments, outlier handling, exclusion decisions, key comparisons, conflicts of interest, ethics or safety information, or required reporting items. It must not turn associations into causal claims, exploratory analyses into confirmatory conclusions, or a changed metric into a way to evade unfavorable evidence.
+This project does not provide a selective-reporting strategy. It must not hide, delete, relabel, or weaken prespecified primary outcomes, null findings, failed experiments, outlier handling, exclusion decisions, key comparisons, conflicts of interest, ethics or safety information, or required reporting items. It must not turn associations into causal claims, exploratory analyses into confirmatory conclusions, or change the metric to evade unfavorable evidence.
 
 ## 快速开始 / Quick start
 
@@ -39,6 +41,26 @@ This project does not provide a selective-reporting strategy. It must not hide, 
 把 [skills/academic-claim-calibration/SKILL.md](skills/academic-claim-calibration/SKILL.md) 复制到你使用的 Agent 工具的 skills 目录。提交原文时，同时提供研究设计、比较对象、主要结果、重要限制和目标期刊要求。没有这些信息时，Skill 应该暂停实质改写，并列出“待补充 / AUTHOR_INPUT_NEEDED”。
 
 Copy [skills/academic-claim-calibration/SKILL.md](skills/academic-claim-calibration/SKILL.md) into the skills directory used by your Agent tool. Supply the study design, comparator, key findings, material limitations, and journal requirements together with the draft. When these inputs are missing, the Skill should pause substantive rewriting and list “待补充 / AUTHOR_INPUT_NEEDED” items.
+
+### 安装说明 / Installation
+
+当前版本以 Markdown 文件分发，不提供自动安装器。安装时请保留 `SKILL.md` 与其 `references/` 子目录的相对位置。不同 Agent 工具的 skills 目录位置不同，请以所用工具的文档为准。
+
+This version is distributed as Markdown files and has no automatic installer. Keep `SKILL.md` together with its `references/` subdirectory. Skill-directory locations differ across Agent tools, so follow the documentation for the tool you use.
+
+以 Codex 为例，可以在仓库根目录执行：
+
+For Codex, run the following from the repository root:
+
+```sh
+mkdir -p "$HOME/.codex/skills/academic-claim-calibration/references"
+cp skills/academic-claim-calibration/SKILL.md "$HOME/.codex/skills/academic-claim-calibration/"
+cp skills/academic-claim-calibration/references/oral-practices.md "$HOME/.codex/skills/academic-claim-calibration/references/"
+```
+
+安装后可以运行 `python3 scripts/validate_project.py` 和 `ruby scripts/validate_frontmatter.rb` 检查本地文件。其他工具请把同样的两个文件复制到该工具文档指定的 skills 目录。
+
+After installation, run `python3 scripts/validate_project.py` and `ruby scripts/validate_frontmatter.rb` to check the local files. For other tools, copy the same two files into the skills directory documented by that tool.
 
 ### 作为 Prompt 使用 / Use as a prompt
 
@@ -87,6 +109,8 @@ The project uses a simple stopping rule: handle qualifiers that change reader in
     docs/reference-basis.md                     # 学术依据 / reference basis
     docs/oral-practices.md                      # Oral 做法的独立整理 / independent Oral-practice synthesis
     scripts/validate_project.py                 # 无依赖静态检查 / dependency-free validation
+    scripts/validate_frontmatter.rb             # YAML frontmatter 检查 / YAML frontmatter check
+    .github/workflows/validate.yml              # GitHub Actions 检查 / GitHub Actions checks
     CONTRIBUTING.md                             # 双语贡献说明 / bilingual contribution guide
     LICENSE                                     # 本项目原创文件的 MIT 许可 / MIT for original files
     THIRD-PARTY-NOTICES.md                      # 上游署名与许可 / upstream attribution
@@ -109,9 +133,19 @@ The project separates the removal of empty rhetoric from the preservation of sci
 
 ## 当前状态 / Current status
 
-当前版本是初始公开草案。它已经完成结构化审阅和静态检查，但没有在真实论文上进行系统评估，也没有证明能够提高接收率、引用量或审稿结果。使用者仍需逐项核对原始数据、分析脚本、图表、引用和期刊要求。
+当前版本是初始公开草案。它已经完成结构化审阅和静态检查，仓库会在 Push 和 Pull Request 时运行这些检查，但没有在真实论文上进行系统评估，也没有证明能够提高接收率、引用量或审稿结果。使用者仍需逐项核对原始数据、分析脚本、图表、引用和期刊要求。
 
-This is an initial public draft. It has undergone structural review and static checks, but it has not been systematically evaluated on real manuscripts and does not demonstrate improvements in acceptance, citations, or peer-review outcomes. Users must still verify the original data, analysis code, figures, citations, and journal requirements.
+This is an initial public draft. It has undergone structural review and static checks, and the repository runs those checks on pushes and pull requests. It has not been systematically evaluated on real manuscripts and does not demonstrate improvements in acceptance, citations, or peer-review outcomes. Users must still verify the original data, analysis code, figures, citations, and journal requirements.
+
+## 验证范围 / Validation scope
+
+`scripts/validate_project.py` 检查必需文件、Skill 和 Prompt 的双语章节、Markdown 围栏代码块、Skill frontmatter 的基本字段和仓库内的相对链接。`scripts/validate_frontmatter.rb` 使用 Ruby 的 YAML 解析器检查 frontmatter 是否能被解析，以及 `name` 和 `description` 是否符合项目规则。GitHub Actions 会在推送和 Pull Request 时运行这些检查。
+
+这些检查不验证外部链接是否仍然可访问，不判断统计方法和数字是否正确，不证明中英文语义完全等价，也不执行 Skill 或 Prompt 的 Agent 运行效果。真实稿件仍需要作者、合作者或导师逐项复核。
+
+`scripts/validate_project.py` checks required files, bilingual sections in the Skill and prompt, fenced Markdown code blocks, basic Skill frontmatter fields, and repository-relative links. `scripts/validate_frontmatter.rb` uses Ruby's YAML parser to check that the frontmatter parses and that `name` and `description` meet the project rules. GitHub Actions runs these checks on pushes and pull requests.
+
+These checks do not verify that external links remain reachable, judge whether statistical methods or numbers are correct, prove full semantic equivalence between Chinese and English, or execute the Skill or prompt in an Agent. Authors, collaborators, or supervisors must still review real manuscripts.
 
 ## 贡献 / Contributing
 

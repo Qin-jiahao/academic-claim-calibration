@@ -20,7 +20,7 @@ The upstream project reports processing 884 entries from six conference cycles, 
 | 有解释力的比较 / Meaningful comparison | 比较要解决哪个决策问题，哪些条件相同，哪些条件不同？ / What decision should the comparison resolve, and what stays fixed or changes? | 换比较口径不能用来逃避不利结果；不同口径回答的是不同问题。 / A changed comparator cannot be used to evade an unfavorable result; it answers a different question. |
 | 结论带着条件 / Conditions beside conclusions | 哪个模型类别、人群、量词、保证条件、范围或数值口径不能省略？ / Which model class, population, quantifier, guarantee condition, scope, or numerical convention must remain visible? | 摘要没有写出的条件不能凭直觉补齐；实验结果不能写成形式保证。 / Do not fill missing conditions from intuition or turn empirical results into formal guarantees. |
 | 资源能做什么 / What a resource enables | 数据、代码、基准或接口让别人具体能做什么？ / What can another researcher actually do with the data, code, benchmark, or interface? | 区分计划用途、已展示用途和已经发布的内容。 / Distinguish intended uses, demonstrated uses, and what is actually released. |
-| 有边界的认识 / Bounded lesson | 读者应理解什么，什么条件会限制迁移？ / What should readers understand, and what condition would limit transfer? | 一项描述性结果不自动提供机制或普遍设计规则。 / A descriptive result does not automatically provide a mechanism or universal design rule. |
+| 有边界的结论 / Bounded lesson | 读者应理解什么，什么条件会限制迁移？ / What should readers understand, and what condition would limit transfer? | 一项描述性结果不自动提供机制或普遍设计规则。 / A descriptive result does not automatically provide a mechanism or universal design rule. |
 
 ## 阅读层级 / Reading levels
 
@@ -36,7 +36,7 @@ The upstream project reports processing 884 entries from six conference cycles, 
 
 1. 每次只选一到三项与作者当前问题直接相关的做法。
 2. 每条来源型建议都记录论文链接、定位信息和阅读层级。
-3. 分开写“来源观察”“为什么可能适用”“给当前稿件的动作”和“重要例外”。
+3. 分开写“来源观察”“为什么可能适用”“对当前稿件的具体修改动作”和“重要例外”。
 4. 不把 Oral 身份、论文数量或来源论文的排名写成正确性、因果效果或录用保证。
 5. 不用来源论文替代作者对自己数据、方法和研究目的的判断。
 

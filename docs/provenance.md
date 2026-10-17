@@ -2,9 +2,9 @@
 
 ## 项目关系 / Project relationship
 
-本项目是 Qin-jiahao 对两个公开科研写作项目的独立双语整理和安全化改写。它把来源中的可用编辑思想重新组织成一个有输入契约、证据边界、作者决策点和静态检查的项目。它不声称是上游项目的官方版本、插件目录版本或作者合作版本。
+本项目是 Qin-jiahao 对两个公开科研写作项目的独立双语整理和研究完整性导向的改写。它把来源中的可用编辑思想重新组织成一个有输入契约、证据边界、作者决策点和静态检查的项目。它不声称是上游项目的官方版本、插件目录版本或作者合作版本。
 
-This project is an independent bilingual synthesis and safety-oriented rewrite by Qin-jiahao of ideas from two public research-writing projects. It reorganizes useful editorial ideas into a project with an input contract, evidence boundaries, author decision points, and static checks. It is not an official release, marketplace listing, or collaboration by either upstream project.
+This project is an independent bilingual synthesis and research-integrity-oriented rewrite by Qin-jiahao of ideas from two public research-writing projects. It reorganizes useful editorial ideas into a project with an input contract, evidence boundaries, author decision points, and static checks. It is not an official release, marketplace listing, or collaboration by either upstream project.
 
 ## 已核验上游 / Verified upstream records
 
@@ -22,7 +22,7 @@ This project is an independent bilingual synthesis and safety-oriented rewrite b
 - 作者 / Author: Adkid-Zephyr
 - 仓库 / Repository: [Adkid-Zephyr/oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill)
 - 审阅版本 / Reviewed revision: `a2c4bc41b3aa6946b2ccce1c844ce9936ef83308`（主分支）
-- 公开说明 / Public description: 项目 README 将其描述为从 883 个合格摘要中整理七项可选择的论文学习做法，并明确这是摘要级 AI 辅助提取、综合和部分来源核查。
+- 公开说明 / Public description: 项目 README 将其描述为处理 884 个条目，其中 883 个被视为合格摘要，并从中整理七项可选择的论文学习做法；项目还明确这是摘要级 AI 辅助提取、综合和部分来源核查。
 - 许可证 / License: 在 2026-10-17 检查的公开文件列表中没有发现 LICENSE 文件。该项目的代码和文档复用许可无法仅凭公开页面确认。
 - 本项目使用范围 / Use here: 只对七项做法进行独立概括和重新表述，未复制其示例、长段落、数据卡片、脚本或原始摘要。来源状态保持“公开参考，许可证待核验”。
 
@@ -54,8 +54,8 @@ New or substantially rewritten content includes:
 
 ## 许可证说明 / License notes
 
-本项目的原创改写文件采用 MIT License，版权归属 Qin-jiahao。上游 Anti-Defensive Writing 项目的 MIT 版权和许可文本见根目录 `THIRD-PARTY-NOTICES.md`。对于没有明确许可证的 Oral Paper Skill，本项目不把其未授权内容作为可复制素材；如果未来需要复制代码、示例或原文，应先取得授权或确认许可证。
+本项目的原创改写文件采用 MIT License，版权归属 Qin-jiahao。上游 Anti-Defensive Writing 项目的 MIT 版权和许可文本见根目录 `THIRD-PARTY-NOTICES.md`。对于许可证状态未核验的 Oral Paper Skill，本项目不把其文本作为可复制素材；如果未来需要复制代码、示例或原文，应先取得授权或确认许可证。
 
-Original rewritten files in this project are released under the MIT License with copyright attributed to Qin-jiahao. The upstream Anti-Defensive Writing MIT copyright and license text is retained in `THIRD-PARTY-NOTICES.md`. Because the Oral Paper Skill did not expose a clear license in the inspected file list, this project does not treat its unlicensed text as reusable material. Any future copying of code, examples, or source text requires permission or a verified license.
+Original rewritten files in this project are released under the MIT License with copyright attributed to Qin-jiahao. The upstream Anti-Defensive Writing MIT copyright and license text is retained in `THIRD-PARTY-NOTICES.md`. Because the Oral Paper Skill did not expose a clear license in the inspected file list, this project does not treat its text without a verified license as reusable material. Any future copying of code, examples, or source text requires permission or a verified license.
 
 核验日期 / Verification date: 2026-10-17

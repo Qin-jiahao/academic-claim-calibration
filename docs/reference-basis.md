@@ -20,8 +20,8 @@ The following literature and official resources informed the design. They suppor
 
 - [EQUATOR Network: How to write a great research paper using reporting guidelines](https://www.equator-network.org/toolkits/writing-research/).
 - [EQUATOR Network reporting-guideline library](https://www.equator-network.org/reporting-guidelines/).
-- 用途 / Use: 帮助作者根据研究设计查找适用的报告指南。此项目只提示核对，不声称已经完成 CONSORT、STROBE、PRISMA 或其他指南认证。
-- These resources help authors locate guidance by study design. This project only prompts a check; it does not claim CONSORT, STROBE, PRISMA, or other compliance.
+- 用途 / Use: 帮助作者根据研究设计查找适用的报告指南。此项目只提示核对，不声称已经完成 CONSORT、STROBE、PRISMA 或其他指南的符合性核对。
+- These resources help authors locate guidance by study design. This project only prompts a check; it does not claim to have completed CONSORT, STROBE, PRISMA, or other guideline-compliance checks.
 
 ## 上游项目资料 / Upstream project materials
 
@@ -29,6 +29,6 @@ The following literature and official resources informed the design. They suppor
 - [Oral Paper Skill README](https://github.com/Adkid-Zephyr/oral-paper-skill/blob/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308/README.md)
 - [Oral Paper Skill abstract-derived practices](https://github.com/Adkid-Zephyr/oral-paper-skill/blob/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308/skills/oral-paper-skill/references/abstract-derived-practices.md)
 
-这些链接用于来源核对和概念追溯。上游 Oral Paper Skill 的许可证状态在 [provenance 文档](provenance.md) 中标为待核验；本项目没有把其未授权文本作为可复制内容。
+这些链接用于来源核对和概念追溯。上游 Oral Paper Skill 的许可证状态在 [provenance 文档](provenance.md) 中标为待核验；本项目没有把其许可证未核验的文本作为可复制内容。
 
-These links are provided for provenance checking and concept tracing. The Oral Paper Skill's license status is marked unverified in the [provenance document](provenance.md); this project does not treat unlicensed text as reusable content.
+These links are provided for provenance checking and concept tracing. The Oral Paper Skill's license status is marked unverified in the [provenance document](provenance.md); this project does not treat text without a verified license as reusable content.

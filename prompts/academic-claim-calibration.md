@@ -64,9 +64,9 @@ Use these labels:
 - NEEDS_EVIDENCE / 待补充
 - DO_NOT_REMOVE / 禁止删除
 
-只删除没有信息增量的道歉式铺垫、重复免责声明和无证据的自我贬低。保留预先规定的结局、阴性和不一致结果、关键比较、排除与异常值处理、利益冲突、伦理安全信息、报告规范要求和会改变解释的限制。不要把“未检出差异”改成“没有影响”，不要把相关改成因果，不要把探索性分析改成确认性结果，不要把尚未评估的范围写成已验证。
+只删除没有信息增量的道歉式铺垫、重复免责声明和无证据的自我贬低。保留预先规定的结局、阴性和不一致结果、关键比较、排除与异常值处理、利益冲突、伦理与安全信息、报告规范要求和会改变解释的限制。不要把“未检出差异”改成“没有影响”，不要把相关改成因果，不要把探索性分析改成确认性结果，不要把尚未评估的范围写成已验证。不要在事件数、比例、率、风险或效应量之间互换；指标类型不清楚时标记为 `NEEDS_EVIDENCE / 待补充`。
 
-Remove only apology-like openings, redundant disclaimers, and unsupported self-deprecation that add no information. Keep prespecified outcomes, null and inconsistent findings, key comparisons, exclusions and outlier handling, conflicts of interest, ethics and safety information, reporting requirements, and limitations that affect interpretation. Do not turn “no difference detected” into “no effect,” association into causation, exploratory analysis into a confirmatory result, or an unassessed scope into a validated one.
+Remove only apology-like openings, redundant disclaimers, and unsupported self-deprecation that add no information. Keep prespecified outcomes, null and inconsistent findings, key comparisons, exclusions and outlier handling, conflicts of interest, ethics and safety information, reporting requirements, and limitations that affect interpretation. Do not turn “no difference detected” into “no effect,” association into causation, exploratory analysis into a confirmatory result, or an unassessed scope into a validated one. Do not interchange event counts, proportions, rates, risks, or effect measures; mark the sentence as `NEEDS_EVIDENCE` when the metric type is unclear.
 
 当作者预期 AI 辅助审阅会放大模糊或夸大的句子时，提高证据可追溯性，不要让每句话都套上谨慎模板。每个必要限定语只出现一次，并放在最能改变判断的位置。默认最多给出三项实质改进；如果需要作者选择主线，最多给两个选项，并说明每个选项保留和牺牲的信息。
 
@@ -85,7 +85,7 @@ Return the following sections in order:
 1. **任务确认 / Task confirmation**：模式、章节、目标读者和证据范围。
 2. **主张—证据审查表 / Claim–evidence audit**：原句、标签、证据位置、处理建议、待补充或待核验项。
 3. **修改稿 / Revision**：先中文，后英文；两种语言必须保持相同的事实、范围、因果强度和不确定性。
-4. **保留清单 / Retained disclosures**：列出保留的阴性结果、冲突证据、限制、适用范围和伦理安全信息。
+4. **保留清单 / Retained disclosures**：列出保留的阴性结果、冲突证据、限制、适用范围和伦理与安全信息。
 5. **改动记录 / Change log**：说明删除了哪些空洞修辞，以及每个实质改写对应的证据。
 6. **来源轨迹 / Source trail**：仅在对照或复盘模式下提供论文链接、定位、阅读层级、适用原因和例外。
 7. **作者决策 / Author decisions**：列出最多两个需要作者确认的主线选择。
@@ -117,7 +117,11 @@ When information is insufficient, output:
 
 **输入 / Input**
 
-模式为校准改写。原文：Although the method was associated with fewer readmissions in our cohort, it is important to acknowledge that the sample came from one hospital and the improvement may be limited. We nevertheless believe the method is promising.
+模式：校准改写。
+
+中文原文：尽管在本队列中该方法与较少的再入院相关，但需要承认样本来自一家医院，改进幅度可能有限。我们仍认为该方法有前景。
+
+Chinese draft: Although the method was associated with fewer readmissions in our cohort, it is important to acknowledge that the sample came from one hospital and the improvement may be limited. We nevertheless believe the method is promising.
 
 已提供信息：单中心回顾性队列；表 2 提供估计值和不确定性；没有外部验证；该设计不能建立因果关系。
 
@@ -131,14 +135,12 @@ Supplied information: single-center retrospective cohort; Table 2 provides the e
 
 Audit: Keep the association and the single-center limitation (KEEP / DO_NOT_REMOVE). “We nevertheless believe the method is promising” adds no supplied evidence and should be removed or marked for verification (REPHRASE / NEEDS_EVIDENCE).
 
-中文修改稿：在本单中心回顾性队列中，该方法与较低的 30 天再入院风险相关。该设计不能建立因果关系，研究也尚未完成外部验证。真实估计值和不确定性应从表 2 填入。
+中文修改稿 / Chinese revision: 在本单中心回顾性队列中，该方法与较少的再入院相关。该设计不能建立因果关系，研究也尚未完成外部验证。实际估计值和不确定性应从表 2 填入。
 
-中文修改稿 / Chinese revision: 在本单中心回顾性队列中，该方法与较低的 30 天再入院风险相关。该设计不能建立因果关系，研究也尚未完成外部验证。真实估计值和不确定性应从表 2 填入。
-
-English revision: In this single-center retrospective cohort, the method was associated with a lower 30-day readmission risk. The design does not establish causality, and external validation has not been performed. Insert the actual estimate and uncertainty from Table 2.
+English revision: In this single-center retrospective cohort, the method was associated with fewer readmissions. The design does not establish causality, and external validation has not been performed. Insert the actual estimate and uncertainty from Table 2.
 
 ## 来源 / Source
 
-本 Prompt 是本项目的原创双语整理，综合了 [anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill) 的主张校准线索和 [oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill) 的来源对照与有边界复盘方法。两者的版本、许可证状态和改写范围见 [docs/provenance.md](../docs/provenance.md)。本 Prompt 没有复制上游长段落。
+本 Prompt 是本项目的原创双语整理，综合了 [anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill) 的主张校准线索和 [oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill) 的来源对照与有边界的复盘方法。两者的版本、许可证状态和改写范围见 [docs/provenance.md](../docs/provenance.md)。本 Prompt 没有复制上游长段落。
 
 This prompt is an original bilingual synthesis for this project. It combines claim-calibration ideas from [anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill) with source-linked comparison and bounded reflection from [oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill). Their versions, license status, and adaptation scope are documented in [docs/provenance.md](../docs/provenance.md). This prompt does not copy long passages from either upstream project.

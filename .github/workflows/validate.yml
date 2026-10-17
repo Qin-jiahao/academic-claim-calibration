@@ -1,0 +1,43 @@
+name: Validate project
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate project structure and local links
+        run: python scripts/validate_project.py
+
+      - name: Validate YAML frontmatter
+        run: ruby scripts/validate_frontmatter.rb
+
+      - name: Check whitespace in the submitted change
+        run: git diff --check HEAD^ HEAD
+
+      - name: Check unresolved markers
+        run: |
+          if rg -n -i 'TODO|FIXME|TBD|REPLACE_ME|YOUR_[A-Z_]+|<INSERT' \
+            --glob '!CHANGELOG.md' \
+            --glob '!scripts/validate_project.py' \
+            --glob '!scripts/validate_frontmatter.rb' \
+            .; then
+            exit 1
+          fi

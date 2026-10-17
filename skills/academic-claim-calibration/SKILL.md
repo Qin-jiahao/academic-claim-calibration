@@ -7,13 +7,13 @@ description: Identify unnecessary self-undermining in academic prose and revise 
 
 ## Purpose / 用途
 
-这个 Skill 用于审查和改写论文摘要、引言、结果、讨论、结论、方法局限以及回复审稿人的段落。它只处理用户提供的文本和证据，目标是删除没有信息增量的修辞性自我削弱，并让主张的范围、因果强度和语气与研究设计及证据一致。
+这个 Skill 用于审查和改写论文摘要、引言、结果、讨论、结论、方法局限以及回复审稿人的段落。它只直接处理用户提供的文本和证据，目标是删除没有信息增量的修辞性自我削弱，并让主张的范围、因果强度和语气与研究设计及证据一致。对照模式下，外部论文只能在用户提供稳定链接或系统能够核验来源时用于对照。
 
-This Skill reviews and revises paragraphs from abstracts, introductions, results, discussions, conclusions, limitations, and reviewer responses. It works only with user-supplied text and evidence. Its goal is to remove rhetorical self-undermining that adds no information and align claim scope, causal strength, and tone with the study design and evidence.
+This Skill reviews and revises paragraphs from abstracts, introductions, results, discussions, conclusions, limitations, and reviewer responses. It directly processes only user-supplied text and evidence. Its goal is to remove rhetorical self-undermining that adds no information and align claim scope, causal strength, and tone with the study design and evidence. In compare mode, external papers may be used only when the user supplies a stable link or the system can verify the source.
 
-“防御性写作”在这里仅指不必要的道歉、预先想象的反驳、重复免责声明和无证据的自我贬低。必要的谨慎表达、真实局限和不利结果不属于可删除的修辞。
+“防御性写作”在这里仅指不必要的道歉、预先设想的反驳、重复免责声明和无证据的自我贬低。必要的谨慎表达、真实局限和不利结果不属于可删除的修辞。
 
-Here, “defensive writing” means unnecessary apologies, imagined objections, repeated disclaimers, and unsupported self-deprecation. Evidence-based caution, material limitations, and unfavorable findings are not disposable rhetoric.
+Here, “defensive writing” means unnecessary apologies, unnecessary pre-emptive objections, repeated disclaimers, and unsupported self-deprecation. Evidence-based caution, material limitations, and unfavorable findings should not be treated as removable rhetoric.
 
 ## Use cases / 适用场景
 
@@ -34,13 +34,13 @@ Here, “defensive writing” means unnecessary apologies, imagined objections, 
 根据用户任务选择一种主要模式，不要把所有模式都跑一遍：
 
 1. **校准改写 / Calibrate.** 审查已有段落，删除空洞防御性修辞，校准主张范围，并保留必要披露。
-2. **对照改进 / Compare.** 使用用户提供的参考论文或可核验来源，最多提出三处与当前稿件直接相关的改进。每条建议都要区分来源观察、适用解释、对当前稿件的具体动作和限制。
+2. **对照改进 / Compare.** 使用用户提供且可核验的参考论文或系统能够核验的来源，最多提出三处与当前稿件直接相关的改进。每条建议都要区分来源观察、适用解释、对当前稿件的具体动作和限制。
 3. **学习复盘 / Reflect.** 解释一项可迁移的写作或证据组织做法，再给作者一个围绕自己材料的练习。不要把优秀论文的做法变成固定模板。
 
 Select one primary mode instead of running every mode:
 
 1. **Calibrate.** Audit an existing paragraph, remove empty defensive rhetoric, calibrate claim scope, and retain necessary disclosures.
-2. **Compare.** Use user-supplied or verifiable papers to propose at most three changes directly relevant to the draft. Separate the source observation, applicability, concrete action, and limitation.
+2. **Compare.** Use reference papers supplied by the user, or sources the system can verify, to propose at most three changes directly relevant to the draft. Separate the source observation, applicability, concrete action, and limitation.
 3. **Reflect.** Explain one transferable writing or evidence-organization practice and give the author a focused exercise. Do not turn exemplary papers into a fixed template.
 
 ## Source-derived narrative practices / 来源启发的叙事做法
@@ -53,7 +53,7 @@ Select one primary mode instead of running every mode:
 4. **有解释力的比较：** 说明比较要解决什么问题，哪些条件保持不变，哪些条件发生变化；效率比较要交代资源计量边界。
 5. **结论带着条件：** 在结论附近保留模型类别、适用人群、量词、保证条件、比较范围和数值口径。
 6. **说明资源能做什么：** 对数据集、基准、代码或接口，区分计划用途、已展示用途和实际发布状态。
-7. **有边界的认识：** 把观察、解释和建议分开，并说明什么条件会限制迁移。
+7. **有边界的结论：** 把观察、解释和建议分开，并说明什么条件会限制迁移。
 
 These seven practices are adapted as selectable editorial questions from the upstream `oral-paper-skill` synthesis of public abstract material. They are not conference-selection laws or a scorecard. Select one to three:
 
@@ -89,16 +89,16 @@ When authors anticipate AI-assisted review, improve traceability and claim–evi
 
 1. 必须保留预先规定的主要和次要结局、阴性或不一致结果、失败实验、关键比较、排除和异常值处理、研究限制、利益冲突、伦理与安全信息，以及目标报告规范要求披露的内容。
 2. 不得通过更换评价指标、比较对象、数据子集、时间窗口或应用场景来逃避与研究问题相关的不利结果。可以收窄主张的适用范围，但必须说明适用范围变化。
-3. 不得把“未检出差异”改成“没有影响”，把相关改成因果，把探索性或 post-hoc 分析改成预先规定的确认性结果，也不得把模型尚未评估的范围写成已验证。
-4. 不得修改用户提供的数字、单位、样本量、效应量、P 值、置信区间、FDR、图表编号、引用或方法名称。需要更改时，先标记 `NEEDS_EVIDENCE / 待补充`。
+3. 不得把“未检出差异”改成“没有影响”，把相关改成因果，把探索性或事后（post hoc）分析改成预先规定的确认性结果，也不得把模型尚未评估的范围写成已验证。
+4. 不得修改用户提供的数字、单位、样本量、效应量、P 值、置信区间、FDR、图表编号、引用或方法名称。不要把事件数、比例、率、风险或效应量互相替换。需要更改时，先标记 `NEEDS_EVIDENCE / 待补充`。
 5. 不替代统计复核、方法学复核、伦理审查、报告指南核对或导师和合作者判断。无法安全判断时，暂停实质改写。
 6. 如果用户明确要求隐藏、删除或改名不利证据，应拒绝该删改，并提供透明、比例适当的替代表述。
 7. 不用于规避 AI 检测、伪造作者贡献、掩盖抄袭或把人工判断交给模板。作者必须确认最终主张、证据和取舍。
 
 1. Keep prespecified primary and secondary outcomes, null or inconsistent findings, failed experiments, key comparisons, exclusions and outlier handling, material limitations, conflicts of interest, ethics and safety information, and items required by the applicable reporting guideline.
 2. Do not evade an unfavorable finding relevant to the research question by changing the metric, comparator, data subset, time window, or application setting. A claim may be narrowed, but the changed scope must be stated.
-3. Do not turn “no difference detected” into “no effect,” association into causation, exploratory or post-hoc analyses into prespecified confirmatory findings, or an unassessed scope into a validated one.
-4. Do not alter supplied numbers, units, sample sizes, effect estimates, P values, confidence intervals, FDR values, figure or table numbers, citations, or method names. Mark a needed change as `NEEDS_EVIDENCE / 待补充`.
+3. Do not turn “no difference detected” into “no effect,” association into causation, exploratory or post hoc analyses into prespecified confirmatory findings, or an unassessed scope into a validated one.
+4. Do not alter supplied numbers, units, sample sizes, effect estimates, P values, confidence intervals, FDR values, figure or table numbers, citations, or method names. Do not interchange event counts, proportions, rates, risks, or effect measures. Mark a needed change as `NEEDS_EVIDENCE / 待补充`.
 5. This Skill does not replace statistical review, methodological review, ethics review, reporting-guideline checks, or author judgment. Pause substantive rewriting when a safe decision cannot be made.
 6. If the user asks to hide, delete, or relabel unfavorable evidence, refuse that deletion and offer a transparent, proportionate alternative.
 7. Do not use it to evade AI detection, misrepresent authorship, conceal plagiarism, or outsource author judgment to a template. The author must confirm the final claims, evidence, and trade-offs.
@@ -158,7 +158,7 @@ Use one label for each sentence or claim:
 5. **最小改写。** 删除空洞道歉和重复免责声明；用直接句子说明发现、条件和范围。保留真实限制和不利证据，不用更强的形容词补偿。
 6. **必要时重排结构。** 可以按“问题—缺口—主张—证据—适用范围—限制”重组段落。实验可以按论证职责重排或移到合适位置，但不能为了隐藏结果而删除。
 7. **双语对齐。** 对中文和英文逐句比较主张强度、条件、限制和不确定性。避免一个版本比另一个版本更绝对。
-8. **发布前核查。** 重新比对数字、单位、样本量、效应量、P 值、置信区间、FDR、引用、图表编号和方法名称，并列出待补充、待核验和无法判断的项目。
+8. **提交前核查。** 重新比对数字、单位、样本量、效应量、P 值、置信区间、FDR、引用、图表编号和方法名称，并列出待补充、待核验和无法判断的项目。
 9. **来源归因。** 在对照模式中记录论文、定位信息和阅读层级；把“来源观察”“适用解释”和“给当前稿件的建议”分开。找不到合适来源时，标记为一般性建议。
 
 1. **Lock supplied facts.** Create a fact inventory for the design, analysis set, comparator, findings, numbers, citations, and author-specified disclosures. Do not introduce an unsupported fact.
@@ -168,7 +168,7 @@ Use one label for each sentence or claim:
 5. **Make the smallest safe revision.** Remove empty apologies and repetition; state the finding, conditions, and scope directly. Keep material limitations and adverse evidence without compensating with stronger adjectives.
 6. **Reorder when needed.** A paragraph may follow “problem–gap–claim–evidence–scope–limitation.” Experiments may be reordered or moved to an appropriate section, but not deleted to hide a finding.
 7. **Align languages.** Compare Chinese and English sentence by sentence for claim strength, conditions, limitations, and uncertainty. Neither version should be more absolute than the other.
-8. **Run the release check.** Recheck numbers, units, sample sizes, effect estimates, P values, confidence intervals, FDR values, citations, figure or table numbers, and method names. List items to provide, verify, or leave undecided.
+8. **Run the pre-submission check.** Recheck numbers, units, sample sizes, effect estimates, P values, confidence intervals, FDR values, citations, figure or table numbers, and method names. List items to provide, verify, or leave undecided.
 9. **Attribute sources.** In compare mode, record the paper, locator, and reading level; separate the source observation, applicability, and recommendation for the current draft. If no suitable source is available, label the advice as general guidance.
 
 ## Output format / 输出格式
@@ -199,7 +199,7 @@ List retained null findings, conflicting evidence, limitations, scope conditions
 
 说明删除或压缩了哪些空洞修辞，说明每个实质改写对应的证据。不能只写“更专业”“更简洁”。
 
-State which empty rhetoric was removed or compressed and which evidence supports each substantive revision. Do not use reasons such as only “more professional” or “more concise.”
+State which empty rhetoric was removed or compressed and which evidence supports each substantive revision. Do not justify a change only by saying it is “more professional” or “more concise.”
 
 ### 5. Open items / 待补充、待核验和无法判断
 
@@ -253,21 +253,23 @@ The following is a teaching example and does not represent a real study. It uses
 - 设计 / Design: 单中心回顾性队列 / single-center retrospective cohort
 - 结局 / Outcome: 30 天再入院 / 30-day readmission
 - 证据 / Evidence: 表 2 提供估计值和不确定性；研究未完成外部验证，也不能建立因果关系 / Table 2 supplies the estimate and uncertainty; external validation was not performed and the design does not establish causality.
-- 草稿 / Draft: “Although the method was associated with fewer readmissions in our cohort, it is important to acknowledge that the sample came from one hospital and the improvement may be limited. We nevertheless believe the method is promising.”
+- 草稿 / Draft:
+  - 中文：尽管在本队列中该方法与较少的 30 天再入院事件相关，但需要承认样本来自一家医院，改进幅度可能有限。我们仍认为该方法有前景。
+  - English: Although the method was associated with fewer 30-day readmissions in our cohort, it is important to acknowledge that the sample came from one hospital and the improvement may be limited. We nevertheless believe the method is promising.
 
 **Audit / 审查**
 
 | Draft claim / 原句 | Label / 标签 | Evidence status / 证据状态 | Action / 处理 |
 | --- | --- | --- | --- |
-| associated with fewer readmissions / 与较少再入院相关 | KEEP / 必须保留 | Supplied by Table 2 / 表 2 已提供 | Keep the association wording / 保留相关性表述 |
+| associated with fewer 30-day readmissions / 与较少的 30 天再入院事件相关 | KEEP / 必须保留 | Supplied by Table 2 / 表 2 已提供 | Keep the association wording / 保留相关性表述 |
 | one hospital; no external validation / 单中心；未做外部验证 | DO_NOT_REMOVE / 禁止删除 | Supplied by the input / 输入已提供 | Keep as a scope limitation / 作为范围限制保留 |
 | “we nevertheless believe ... promising” / “我们仍认为有前景” | REPHRASE / 仅改写 | No additional evidence supplied / 没有额外证据 | Remove the unsupported evaluation / 删除无额外证据的评价 |
 
 **Safe revision / 安全改写**
 
-中文：在本单中心回顾性队列中，该方法与较低的 30 天再入院风险相关。该设计不能建立因果关系，研究也尚未完成外部验证。真实估计值和不确定性应从表 2 填入。
+中文：在本单中心回顾性队列中，该方法与较少的 30 天再入院事件相关。该设计不能建立因果关系，研究也尚未完成外部验证。实际估计值和不确定性应从表 2 填入。
 
-English: In this single-center retrospective cohort, the method was associated with a lower 30-day readmission risk. The design does not establish causality, and external validation has not been performed. Insert the actual estimate and uncertainty from Table 2.
+English: In this single-center retrospective cohort, the method was associated with fewer 30-day readmissions. The design does not establish causality, and external validation has not been performed. Insert the actual estimate and uncertainty from Table 2.
 
 ## Insufficient-information example / 信息不足时的处理示例
 
@@ -285,6 +287,6 @@ English: The available information is insufficient to determine whether the mode
 
 ## Source / 来源
 
-本 Skill 是对 [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b) 的独立双语改写。上游仓库作者为 Adkid-Zephyr，许可证为 MIT。本版本新增证据边界、透明报告约束、输入输出契约和审查标签，未复制截图或上游文件的长段落。截图账号与上游作者的身份关系未核验，详见项目的 [provenance 文档](../../docs/provenance.md)。
+本 Skill 是对 [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b) 的独立双语改写。七项来源启发的做法另见 [oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill/tree/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308)，其许可证状态和使用范围见 provenance 文档。上游反防御性写作仓库作者为 Adkid-Zephyr，许可证为 MIT。本版本新增证据边界、透明报告约束、输入输出契约和审查标签，未复制截图或上游文件的长段落。截图账号与上游作者的身份关系未核验，详见项目的 [provenance 文档](../../docs/provenance.md)。
 
-This Skill is an independent bilingual rewrite informed by [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b). The upstream author is Adkid-Zephyr and the upstream license is MIT. This version adds evidence boundaries, transparent-reporting safeguards, input and output contracts, and audit labels; it does not reproduce long passages from the screenshot or upstream files. The relationship between the screenshot account and the upstream author is unverified; see the project [provenance document](../../docs/provenance.md).
+This Skill is an independent bilingual rewrite informed by [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b) and the seven source-derived practices documented in [oral-paper-skill](https://github.com/Adkid-Zephyr/oral-paper-skill/tree/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308). The Oral Paper Skill's license status and use scope are documented in the provenance file. The upstream Anti-Defensive Writing author is Adkid-Zephyr and its license is MIT. This version adds evidence boundaries, transparent-reporting safeguards, input and output contracts, and audit labels; it does not reproduce long passages from the screenshot or upstream files. The relationship between the screenshot account and the upstream author is unverified; see the project [provenance document](../../docs/provenance.md).
