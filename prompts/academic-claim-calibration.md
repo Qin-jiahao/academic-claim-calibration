@@ -133,7 +133,7 @@ Audit: Keep the association and the single-center limitation (KEEP / DO_NOT_REMO
 
 中文修改稿：在本单中心回顾性队列中，该方法与较低的 30 天再入院风险相关。该设计不能建立因果关系，研究也尚未完成外部验证。真实估计值和不确定性应从表 2 填入。
 
-Chinese revision: 在本单中心回顾性队列中，该方法与较低的 30 天再入院风险相关。该设计不能建立因果关系，研究也尚未完成外部验证。真实估计值和不确定性应从表 2 填入。
+中文修改稿 / Chinese revision: 在本单中心回顾性队列中，该方法与较低的 30 天再入院风险相关。该设计不能建立因果关系，研究也尚未完成外部验证。真实估计值和不确定性应从表 2 填入。
 
 English revision: In this single-center retrospective cohort, the method was associated with a lower 30-day readmission risk. The design does not establish causality, and external validation has not been performed. Insert the actual estimate and uncertainty from Table 2.
 
