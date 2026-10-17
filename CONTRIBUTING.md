@@ -4,7 +4,7 @@
 
 欢迎提交能够提高证据可追溯性、双语一致性、作者控制和来源清晰度的修改。这个项目收录的是可复用的 Skill、Prompt 和审查规则，不收录未经授权的截图、私人信息、整段网络复制内容或虚构的研究结果。
 
-Contributions that improve evidence traceability, bilingual consistency, author control, and provenance clarity are welcome. This project accepts reusable Skills, prompts, and review rules. Do not submit unauthorized screenshots, private information, copied web passages, or fabricated research results.
+Contributions that improve evidence traceability, bilingual consistency, author control, and provenance clarity are welcome. This project accepts reusable Skills, prompts, and review rules. Do not submit unauthorized screenshots, private information, unauthorized copied web passages, or fabricated research results.
 
 ## 提交前检查 / Before submitting
 

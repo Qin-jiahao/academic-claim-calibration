@@ -28,9 +28,9 @@ This project is an independent bilingual synthesis of two public projects: [Adki
 
 ### 明确边界 / Non-goals and guardrails
 
-本项目不提供选择性报告策略。它不能指导用户隐藏、删除、改名或弱化预先规定的主要结局、阴性结果、失败实验、异常值处理、关键比较、利益冲突、伦理风险或报告规范要求。它也不能把相关性改写成因果关系，把探索性分析写成确认性结论，或通过更换评价指标来规避不利证据。
+本项目不提供选择性报告策略。它不能指导用户隐藏、删除、改名或弱化预先规定的主要结局、阴性结果、失败实验、异常值处理、排除决定、关键比较、利益冲突、伦理风险或报告规范要求。它也不能把相关性改写成因果关系，把探索性分析写成确认性结论，或通过更换评价指标来规避不利证据。
 
-This project does not provide a selective-reporting strategy. It must not hide, delete, relabel, or weaken prespecified primary outcomes, null findings, failed experiments, exclusion decisions, key comparisons, conflicts of interest, ethics or safety information, or required reporting items. It must not turn associations into causal claims, exploratory analyses into confirmatory conclusions, or a changed metric into a way to evade unfavorable evidence.
+This project does not provide a selective-reporting strategy. It must not hide, delete, relabel, or weaken prespecified primary outcomes, null findings, failed experiments, outlier handling, exclusion decisions, key comparisons, conflicts of interest, ethics or safety information, or required reporting items. It must not turn associations into causal claims, exploratory analyses into confirmatory conclusions, or a changed metric into a way to evade unfavorable evidence.
 
 ## 快速开始 / Quick start
 

@@ -8,6 +8,10 @@ This project was informed by the following public repository:
 
 https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill
 
+Reviewed revision / 核验版本: [82d31402caa0db1790026824399044538483171b](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b), checked 2026-10-17. The license file is [LICENSE](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/blob/82d31402caa0db1790026824399044538483171b/LICENSE).
+
+核验版本 / Reviewed revision： [82d31402caa0db1790026824399044538483171b](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b)，核验日期为 2026-10-17。许可证文件为 [LICENSE](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/blob/82d31402caa0db1790026824399044538483171b/LICENSE)。
+
 上游作者和许可证记录：
 
 Upstream author and license record:
@@ -45,3 +49,7 @@ This project does not reproduce long passages from the upstream files. This noti
 This project was informed by editorial concepts described in the public documentation of this repository and independently summarizes them. No LICENSE file was visible in the public file list inspected on 2026-10-17. This project therefore does not copy its code, examples, source abstracts, or long passages. Any future copying of specific material requires permission or a verified license.
 
 Repository: https://github.com/Adkid-Zephyr/oral-paper-skill
+
+Reviewed revision / 核验版本: [a2c4bc41b3aa6946b2ccce1c844ce9936ef83308](https://github.com/Adkid-Zephyr/oral-paper-skill/tree/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308), checked 2026-10-17. No LICENSE file was visible in the inspected public file list.
+
+核验版本 / Reviewed revision： [a2c4bc41b3aa6946b2ccce1c844ce9936ef83308](https://github.com/Adkid-Zephyr/oral-paper-skill/tree/a2c4bc41b3aa6946b2ccce1c844ce9936ef83308)，核验日期为 2026-10-17。检查的公开文件列表中没有看到 LICENSE 文件。
